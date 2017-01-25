@@ -1,0 +1,128 @@
+body {
+  font-family: /*AndaleMono, "Andale Mono", Andale Mono,*/ Verdana, sans-serif;
+  margin-left: 2.5in;
+  margin-right: 2.5in;
+  opacity: 1;
+}
+
+#header_container {
+  text-align: center;
+}
+
+#header_container > .name {
+  margin-bottom: 3px;
+  margin-top: 9px;
+  font-size: 2.5em;
+}
+
+#header_container > .name > span {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#header_container > .name .given {
+  color: #807080;
+  border-right: solid 1px black;
+}
+
+#header_container .name .family {
+  color: #070707;
+}
+
+#header_container .contact_details {
+  font-size: 1.1em;
+  padding-bottom: 7px;
+}
+
+#header_container .contact_details span {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.resume-section {
+  padding-bottom: 8px;
+}
+
+.resume-section > *:nth-child(1) {
+  font-size: 1.50em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  border-bottom: solid 4px #90FF50;
+  border-left: solid 1em #90FF50;
+  column-count: 2;
+}
+
+.resume-section > *:nth-child(1n+2) * /*, .resume-section .itemize > div */ {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 0px;
+}
+
+.itemize > div {
+  padding-bottom: 7px;
+}
+
+.itemize > div > div:nth-child(1) {
+  font-size: 1.2em;
+  font-weight: bold;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  vertical-align: middle;
+}
+
+.itemize > div > div:nth-child(1) > *:nth-child(1) {
+  margin-right: 0.2in;
+}
+
+.itemize > div > ul {
+  padding-left: 3px;
+  list-style: square;
+}
+
+.itemize > div > ul > li *:first-child {
+  font-size: 1.025em;
+}
+
+.itemize > div table {
+  border-collapse: collapse;
+}
+
+.itemize div table th {
+  text-align: left;
+  font-size: 1.125em;
+  vertical-align: middle;
+  padding: 1px;
+  padding-right: 5px;
+}
+
+.itemize div table td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+.itemize div table tr:nth-child(odd) {
+  background-color: rgba(174, 255, 110, 0.175) /*#DDFF9D*/;
+}
+
+.itemize div table tr:nth-child(even) {
+  background-color: rgba(144, 255, 80, 0.3) /*#DDFF9D*/;
+}
+
+.itemize > div > *:nth-last-child(1) {
+  margin-left: 17px;
+}
+
+.itemize > div > div:nth-child(1) > .description {
+  font-weight: lighter;
+  font-style: oblique;
+  font-size: 0.7em;
+  color: #4D4D4D;
+  margin-right: auto;
+}
+
+.itemize > div > .description {
+  margin-left: 0;
+}

@@ -1,0 +1,47 @@
+body {
+  font-size: 0.915em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#header_container .name .family {
+  background-color: white;
+}
+
+#header_container > .name {
+  margin-bottom: 9px;
+  margin-top: 1px;
+  font-size: 2.5em;
+}
+
+#header_container > .name .given {
+  border-right: none;
+}
+
+.itemize div table tr:nth-child(even) {
+  background-color: white;
+}
+
+.itemize div table tr {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.body-column {
+  margin-left: 0.15in;
+  margin-right: 0.15in;
+}
+
+#body_container {
+  display: flex;
+}
+
+@page {
+  margin: 0.2in;
+  margin-top: 0.1in;
+}
