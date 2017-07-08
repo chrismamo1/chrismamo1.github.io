@@ -49,8 +49,8 @@ body {
   margin-bottom: 5px;
   padding-left: 5px;
   padding-bottom: 2px;
-  border-bottom: solid 4px #90FF50;
-  border-left: solid 1em #90FF50;
+  border-bottom: solid 4px #905050;
+  border-left: solid 1em #905050;
   column-count: 2;
 }
 
@@ -103,14 +103,6 @@ body {
   padding: 1px;
 }
 
-.itemize div table tr:nth-child(odd) {
-  background-color: rgba(174, 255, 110, 0.175) /*#DDFF9D*/;
-}
-
-.itemize div table tr:nth-child(even) {
-  background-color: rgba(144, 255, 80, 0.3) /*#DDFF9D*/;
-}
-
 .itemize > div > *:nth-last-child(1) {
   margin-left: 17px;
 }
@@ -118,6 +110,15 @@ body {
 .itemize > div > div:nth-child(1) > .description {
   font-weight: lighter;
   font-style: oblique;
+  font-size: 0.7em;
+  color: #4D4D4D;
+  margin-right: auto;
+  display: inline;
+}
+
+.itemize > div > div:nth-child(1) > .tools {
+  font-weight: lighter;
+  font-style: bold;
   font-size: 0.7em;
   color: #4D4D4D;
   margin-right: auto;
