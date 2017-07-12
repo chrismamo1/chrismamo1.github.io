@@ -238,3 +238,42 @@ h3 {
   border-left: 2px solid darken(mix-neutral($harmonious-first), 9%);
   padding-left: 2px;
 }
+
+.topLanguage {
+  vertical-align: bottom;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  box-sizing: content-box;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    display: inline-block;
+  }
+  .deets {
+    vertical-align: bottom;
+    flex-grow: 9;
+  }
+}
+
+.topLanguage.ocaml {
+  background-color: lighten(mix-neutral(complement(rgb(245, 144, 29))), 10%);
+}
+
+.topLanguage.c {
+  background-color: darken(mix-neutral(complement(rgb(169, 185, 203))), 3%);
+}
+
+.topLanguage.java {
+  background-color: lighten(mix-neutral(complement(rgb(83, 130, 61))), 30%);
+}
+
+.topLanguage.go {
+  background-color: darken(mix-neutral(complement(rgb(106, 215, 229))), 1%);
+}
