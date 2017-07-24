@@ -4,7 +4,8 @@ body {
   margin-left: 2.5in;
   margin-right: 2.5in;
   opacity: 1;
-  background-color: #fffaff; }
+  background-color: #fffaff;
+  letter-spacing: 0.25px; }
 
 * {
   list-style: none; }
@@ -70,7 +71,7 @@ h3 {
     margin-bottom: 1px; }
 
 .itemize > div {
-  padding-bottom: 7px; }
+  padding-bottom: 5px; }
 
 .itemize > div > div:nth-child(1) {
   font-size: 1.2em;
@@ -105,7 +106,7 @@ h3 {
 
 .itemize > div > *:nth-last-child(1) {
   margin-left: 0;
-  margin-bottom: 2px; }
+  margin-bottom: 1px; }
 
 .itemize > div > div:nth-child(1) > .description {
   font-weight: lighter;
@@ -126,6 +127,8 @@ h3 {
   margin-left: 0; }
 
 .leftLine {
+  border-top: none;
+  border-bottom: none;
   border-left: 2px solid #46608b;
   padding-left: 2px; }
 
@@ -149,15 +152,21 @@ h3 {
     flex-grow: 9; }
 
 .topLanguage.ocaml {
-  background-color: #6e9fd7; }
+  background-color: #cadcf0; }
+
+.topLanguage.js {
+  background-color: #ddd3e9; }
 
 .topLanguage.c {
-  background-color: #c1b3a4; }
+  background-color: #e6e1da; }
 
 .topLanguage.java {
-  background-color: #b399bf; }
+  background-color: #e2d8e6; }
 
 .topLanguage.go {
-  background-color: #d48076; }
+  background-color: #edccc8; }
+
+.topLanguage.cpp {
+  background-color: #f6d7bf; }
 
 /*# sourceMappingURL=resume.css.map */

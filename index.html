@@ -22,7 +22,7 @@
       </div>
     </div>
     <section id="body_container">
-      <div class="body-column">
+      <div class="body-column" style="flex: 3">
         <div class="resume-section">
           <h2>
             <i class="fa fa-graduation-cap sectionIcon" aria-hidden="true"></i>
@@ -48,7 +48,18 @@
           <div class="itemize">
             <div>
               <h3>Programming Languages</h3>
-              <div style="text-align: center">
+              <div>
+                <div class="topLanguage js">
+                  <img src="nodejs.svg" />
+                  <div class="deets">
+                    <div>
+                      <b>JS</b>
+                    </div>
+                    <div>
+                      ~10K Lines
+                    </div>
+                  </div>
+                </div>
                 <div class="topLanguage ocaml">
                   <img src="ocaml.png" />
                   <div class="deets">
@@ -89,18 +100,29 @@
                       <b>Go</b>
                     </div>
                     <div>
-                      ~1.5K Lines
+                      ~3K Lines
+                    </div>
+                  </div>
+                </div>
+                <div class="topLanguage cpp">
+                  <img src="cpp.png" />
+                  <div class="deets">
+                    <div>
+                      <b>C++</b>
+                    </div>
+                    <div>
+                      ~3K Lines
                     </div>
                   </div>
                 </div>
               </div>
-              <table style="margin-top: 20px;">
+              <table style="margin-top: 20px; border: none">
                 <tr class="leftLine">
                   <th>
                     Other Programming Languages
                   </th>
                   <td>
-                    HTML, CSS (+SASS), JavaScript, C++, x86 assembly, Python, Bash
+                    HTML, CSS (+SASS), x86 assembly, Python, Bash
                   </td>
                 </tr>
               </table>
@@ -128,68 +150,8 @@
             </div>
           </div>
         </div>
-        <div class="resume-section">
-          <h2>
-            <i class="fa fa-code-fork sectionIcon" aria-hidden="true"></i>
-            Projects
-          </h2>
-          <div class="itemize">
-            <div>
-              <div>
-                <a href="https://github.com/chrismamo1/ocaml-cow">OCaml COW</a>
-                <h4 class="description">web programming library</h4>
-                <h4 class="tools">OCaml, HTML, CSS, JavaScript</h4>
-              </div>
-              <ul>
-                <li class="leftLine">
-                  Worked to enhance the safe and efficient generation of web
-                  pages with COW, a static web page generation tool written in OCaml.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <a href="https://github.com/chrismamo1/ppx_netblob/">PPX Netblob</a>
-                <h4 class="description">type-driven web programming</h4>
-                <h4 class="tools">OCaml</h4>
-              </div>
-              <ul>
-                <li class="leftLine">
-                  Authoring an OCaml library for producing safe and efficient
-                  HTTP code at compile time.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <a href="https://twitter.com/mlhacks/status/792825685505028096">Sound of Hacking</a>
-                <h4 class="description">security visualization hack</h4>
-                <h4 class="tools">JavaScript, OCaml, libpcap</h4>
-              </div>
-              <ul>
-                <li class="leftLine">
-                  Tool for visualizing real-time traffic on local networks,
-                  winner of Best Device Security Hack at CodeRed 2016.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <a href="https://github.com/chrismamo1/reflagvsflag/">RE Flag Vs. Flag</a>
-                <h4 class="description">toy site for ranking flags</h4>
-                <h4 class="tools">Go, Postgres, React.js, PureCSS, ReasonML, Docker, AWS</h4>
-              </div>
-              <ul>
-                <li class="leftLine">
-                  Authoring and maintaining a viral site for rating and comparing flags,
-                  reflagvsflag.com.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="body-column">
+      <div class="body-column" style="flex: 4">
         <div class="resume-section">
           <h2>
             <i class="fa fa-building sectionIcon" aria-hidden="true"></i>
@@ -203,12 +165,9 @@
               </div>
               <ul>
                 <li class="leftLine">
-                  Built a system for the mitigation of common Diffie-Hellman
-                  groups.
-                </li>
-                <li class="leftLine">
-                  Developed cloud-based tools for formal verification of crypto
-                  in enterprise applications.
+                  Built tools for the mitigation of common Diffie-Hellman
+                  groups, formal verification of crypto in enterprise
+                  applications.
                 </li>
               </ul>
             </div>
@@ -219,9 +178,8 @@
               </div>
               <ul>
                 <li class="leftLine">
-                  Student grader+tutor for CSE/IT-113 Introduction to
-                  Programming in C and CSE/IT-122 Introduction to Algorithms and
-                  Data Structures.
+                  Grader+tutor for CSE-113 Intro. to Programming in C and
+                  CSE-122 Intro. to Algorithms and Data Structures.
                 </li class="leftLine">
               </ul>
             </div>
@@ -233,7 +191,7 @@
               <ul>
                 <li class="leftLine">
                   Participant in the Android Applications Development LLC, a
-                  freshman introductory research program at New Mexico Tech.
+                  research program at New Mexico Tech.
                 </li>
               </ul>
             </div>
@@ -244,8 +202,7 @@
               </div>
               <ul>
                 <li class="leftLine">
-                  Student researcher assisting with the development of a
-                  citation scraper.
+                  Assisted with the development of a citation scraper.
                 </li>
               </ul>
             </div>
@@ -270,6 +227,92 @@
                 <li class="leftLine">
                   Helping a group of STEM-oriented high-school students produce
                   programs to control robots in a competitive environment.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="resume-section">
+          <h2>
+            <i class="fa fa-code-fork sectionIcon" aria-hidden="true"></i>
+            Projects
+          </h2>
+          <div class="itemize">
+            <div>
+              <div>
+                <a href="https://github.com/chrismamo1/ocaml-cow">OCaml COW</a>
+                <h4 class="description">web programming library</h4>
+                <h4 class="tools">OCaml, HTML, CSS, JavaScript</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Worked to enhance the safe and efficient generation of web
+                  pages with COW, a static web page generation tool written in OCaml.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <a href="https://github.com/chrismamo1/ppx_netblob/">PPX Netblob</a>
+                <h4 class="description">type-driven web programming</h4>
+                <h4 class="tools">OCaml</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Authoring an OCaml library for producing safe and efficient
+                  HTTP code at compile time.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <a href="https://twitter.com/mlhacks/status/792825685505028096">Sound of Hacking</a>
+                <h4 class="description">security visualization hack</h4>
+                <h4 class="tools">JavaScript, OCaml, libpcap</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Tool for visualizing real-time traffic on local networks,
+                  winner of Best Device Security Hack at CodeRed 2016.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <a href="https://github.com/chrismamo1/reflagvsflag/">RE Flag Vs. Flag</a>
+                <h4 class="description">toy site for ranking flags</h4>
+                <h4 class="tools">Go, Postgres, React.js, PureCSS, ReasonML, Docker, AWS</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Authoring and maintaining a viral site for rating and comparing flags,
+                  reflagvsflag.com.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <a href="https://github.com/michemochi/bitcamp2017">WillThisKill.Me?</a>
+                <h4 class="description">hackathon project</h4>
+                <h4 class="tools">CSS, HTML, React.js</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Developing an application to detect and report allergens in food items
+                  with only disparate and partial data.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <a href="https://github.com/chrismamo1/ducklet">Ducklet</a>
+                <h4 class="description">lightweight HTTP server</h4>
+                <h4 class="tools">C, HTTP, Perl</h4>
+              </div>
+              <ul>
+                <li class="leftLine hideOnPrint">
+                  Building a lightweight CGI/Application server to gain experience in
+                  systems programming and networking.
                 </li>
               </ul>
             </div>

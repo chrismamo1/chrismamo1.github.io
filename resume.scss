@@ -87,6 +87,7 @@ body {
   margin-right: 2.5in;
   opacity: 1;
   background-color: $white;
+  letter-spacing: 0.25px;
 }
 
 * {
@@ -167,7 +168,7 @@ h3 {
 }
 
 .itemize > div {
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 }
 
 .itemize > div > div:nth-child(1) {
@@ -210,7 +211,7 @@ h3 {
 
 .itemize > div > *:nth-last-child(1) {
   margin-left: 0;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .itemize > div > div:nth-child(1) > .description {
@@ -235,6 +236,8 @@ h3 {
 }
 
 .leftLine {
+  border-top: none;
+  border-bottom: none;
   border-left: 2px solid darken(mix-neutral($harmonious-first), 9%);
   padding-left: 2px;
 }
@@ -262,17 +265,25 @@ h3 {
 }
 
 .topLanguage.ocaml {
-  background-color: lighten(mix-neutral(complement(rgb(245, 144, 29))), 10%);
+  background-color: lighten(mix-neutral(complement(rgb(245, 144, 29))), 33%);
+}
+
+.topLanguage.js {
+  background-color: lighten(mix-neutral(complement(rgb(140, 200, 75))), 33%);
 }
 
 .topLanguage.c {
-  background-color: darken(mix-neutral(complement(rgb(169, 185, 203))), 3%);
+  background-color: lighten(mix-neutral(complement(rgb(169, 185, 203))), 15%);
 }
 
 .topLanguage.java {
-  background-color: lighten(mix-neutral(complement(rgb(83, 130, 61))), 30%);
+  background-color: lighten(mix-neutral(complement(rgb(83, 130, 61))), 50%);
 }
 
 .topLanguage.go {
-  background-color: darken(mix-neutral(complement(rgb(106, 215, 229))), 1%);
+  background-color: lighten(mix-neutral(complement(rgb(106, 215, 229))), 20%);
+}
+
+.topLanguage.cpp {
+  background-color: lighten(mix-neutral(complement(rgb(0, 88, 156))), 55%);
 }

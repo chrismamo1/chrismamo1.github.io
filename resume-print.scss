@@ -25,11 +25,6 @@ a {
   border-right: none;
 }
 
-.itemize div table tr {
-  border-top: solid 1px $black;
-  border-bottom: solid 1px $black;
-}
-
 .body-column {
   margin-left: 0.15in;
   margin-right: 0.15in;
@@ -39,8 +34,21 @@ a {
   display: flex;
 }
 
+$tl-width:  90px;
+
 .topLanguage {
   background-color: $white;
+  padding: 4px;
+  border-radius: 0;
+  width: $tl-width;
+  img {
+    max-width: $tl-width;
+    max-height: $tl-width;
+  }
+}
+
+.hideOnPrint {
+  display: none;
 }
 
 @page {
