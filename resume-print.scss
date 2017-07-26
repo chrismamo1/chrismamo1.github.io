@@ -1,6 +1,13 @@
-@import "resume.scss";
+$first-color: hsl(226, 100%, 50%);
+
+@import "_color-scheme.scss";
+
+$harmonious-first: lighten($harmonious-first, 1%);
+
+@import "_resume-lib.scss";
 
 body {
+  background-color: white;
   font-size: 0.915em;
   margin-left: 0;
   margin-right: 0;
@@ -8,7 +15,35 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: $black;
+}
+
+a:not(.hideHref) {
+  $a-size: 0.74em;
+  font-size: 0.89em;
+  padding-bottom: 3px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: block;
+  &:after {
+    letter-spacing: 0.125px;
+    content: " [" attr(href) "]";
+    margin-top: 2px;
+    padding-top: 2px;
+    right: 0;
+    position: absolute;
+    font-weight: normal;
+    font-size: $a-size;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: $a-size;
+    margin-left: 2px;
+    margin-bottom: 1px;
+  }
+}
+
+.resume-section > *:nth-child(1) {
+  border-bottom: none;
 }
 
 #header_container .name .family {
@@ -27,31 +62,100 @@ a {
 
 .body-column {
   margin-left: 0.15in;
-  margin-right: 0.15in;
 }
 
 #body_container {
   display: flex;
 }
 
+.sectionIcon {
+  color: darken(mix-neutral($harmonious-first), 5%);
+  border: none;
+  background-color: $white;
+  padding: 0;
+}
+
+.description {
+  display: block;
+  min-height: 1.5em;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-top: 0.05em;
+  margin-left: 0;
+}
+
+.tools {
+  height: 1em;
+  margin-bottom: 0.05em;
+  margin-top: 0.05em;
+}
+
 $tl-width:  90px;
 
 .topLanguage {
+  display: flex;
+  align-items: flex-start;
   background-color: $white;
   padding: 4px;
   border-radius: 0;
-  width: $tl-width;
+  margin: 0px;
+  text-align: left;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   img {
-    max-width: $tl-width;
-    max-height: $tl-width;
+    display: none;
+  }
+  margin-bottom: 2px;
+  .deets {
+    width: 100%;
+    display: inline-flex;
+    .name {
+      text-align: left;
+      flex: 1;
+    }
+    .lines {
+      text-align: right;
+      flex: 10;
+    }
   }
 }
 
 .hideOnPrint {
   display: none;
+  margin: 0;
+}
+
+.showOnPrint {
+  display: block;
+}
+
+.softTable {
+  display: flex;
+  flex-flow: row-wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+  * {
+    font-size: 1em;
+    flex: 2;
+    flex-basis: 40%;
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    padding: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: bottom;
+    vertical-align: middle;
+    /*border-bottom: 1px solid darken(mix-neutral($harmonious-first), 9%);*/
+  }
 }
 
 @page {
-  margin: 0.2in;
-  margin-top: 0.1in;
+  margin-right: 0.39in;
+  margin-left: 0.22in;
+  margin-top: 0.15in;
 }

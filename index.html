@@ -12,17 +12,21 @@
         <span class="given">John</span><span class="family">M<sup style="text-decoration: underline double black">c</sup>Alpine</span>
       </h1>
       <div class="contact_details">
-        <span>cell +1 (432) 288-2945</span>
         <span>
-          <a href="mailto:john.mcalpine@student.nmt.edu">John.McAlpine@student.nmt.edu</a>
+          <i class="fa fa-phone descriptionIcon" aria-hidden="true"></i>
+          +1 (432) 288-2945</span>
+        <span>
+          <i class="fa fa-envelope descriptionIcon" aria-hidden="true"></i>
+          <a class="hideHref" href="mailto:john.mcalpine@student.nmt.edu">John.McAlpine@student.nmt.edu</a>
         </span>
         <span>
-          <a href="https://github.com/chrismamo1">github.com/chrismamo1</a>
+          <i class="fa fa-github descriptionIcon" aria-hidden="true"></i>
+          <a class="hideHref" href="https://github.com/chrismamo1">github.com/chrismamo1</a>
         </span>
       </div>
     </div>
     <section id="body_container">
-      <div class="body-column" style="flex: 3">
+      <div class="body-column" style="flex: 8">
         <div class="resume-section">
           <h2>
             <i class="fa fa-graduation-cap sectionIcon" aria-hidden="true"></i>
@@ -47,15 +51,15 @@
           </h2>
           <div class="itemize">
             <div>
-              <h3>Programming Languages</h3>
+              <h3 class="showOnPrint">Top Programming Languages</h3>
               <div>
                 <div class="topLanguage js">
                   <img src="nodejs.svg" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>JS</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~10K Lines
                     </div>
                   </div>
@@ -63,10 +67,10 @@
                 <div class="topLanguage ocaml">
                   <img src="ocaml.png" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>OCaml</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~10K Lines
                     </div>
                   </div>
@@ -74,10 +78,10 @@
                 <div class="topLanguage c">
                   <img src="c.png" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>C</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~10K Lines
                     </div>
                   </div>
@@ -85,10 +89,10 @@
                 <div class="topLanguage java">
                   <img src="java.png" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>Java</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~5K Lines
                     </div>
                   </div>
@@ -96,10 +100,10 @@
                 <div class="topLanguage go">
                   <img src="go.png" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>Go</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~3K Lines
                     </div>
                   </div>
@@ -107,43 +111,54 @@
                 <div class="topLanguage cpp">
                   <img src="cpp.png" />
                   <div class="deets">
-                    <div>
+                    <div class="name">
                       <b>C++</b>
                     </div>
-                    <div>
+                    <div class="lines">
                       ~3K Lines
                     </div>
                   </div>
                 </div>
               </div>
-              <table style="margin-top: 20px; border: none">
-                <tr class="leftLine">
-                  <th>
-                    Other Programming Languages
-                  </th>
-                  <td>
-                    HTML, CSS (+SASS), x86 assembly, Python, Bash
-                  </td>
-                </tr>
-              </table>
+            </div>
+            <div>
+              <h3>
+                Other Languages
+              </h3>
+              <ul class="softTable">
+                <li>Common Lisp</li>
+                <li>CSS (+SASS)</li>
+                <li>HTML</li>
+                <li>Perl</li>
+                <li>Python</li>
+                <li>x86 assembly</li>
+              </ul>
             </div>
             <div>
               <h3>Tools</h3>
-              <div class="leftLine">SQL (Postgres, SQLite), NGinx, Git, GDB, Graphviz, AWS, Google Cloud Compute, FISH and Bash scripting</div>
+              <ul class="softTable">
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+                <li>NGinx</li>
+                <li>Git</li>
+                <li>GDB</li>
+                <li>AWS</li>
+                <li>Bash &amp; Fish shell</li>
+              </ul>
             </div>
             <div>
               <h3>Highlighted Coursework</h3>
               <ul>
                 <li class="leftLine">
+                  <h4>Android Development</h4>
+                  Spring/Fall 2015
+                </li>
+                <li class="leftLine">
                   <h4>Operating Systems</h4>
                   Spring 2017
                 </li>
                 <li class="leftLine">
-                  <h4>Android Applications Development</h4>
-                  Spring/Fall 2015
-                </li>
-                <li class="leftLine">
-                  <h4>Secure System Administration</h4>
+                  <h4>Secure Systems Administration</h4>
                   Spring 2017
                 </li>
               </ul>
@@ -151,7 +166,7 @@
           </div>
         </div>
       </div>
-      <div class="body-column" style="flex: 4">
+      <div class="body-column" style="flex: 11">
         <div class="resume-section">
           <h2>
             <i class="fa fa-building sectionIcon" aria-hidden="true"></i>
@@ -161,9 +176,12 @@
             <div>
               <div>
                 <span>CryptoSense</span>
-                <h4 class="description">software engineering intern, July-October 2016</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-user-secret descriptionIcon" aria-hidden="true"></i>
+                  software engineering intern, July-October 2016
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Built tools for the mitigation of common Diffie-Hellman
                   groups, formal verification of crypto in enterprise
@@ -174,21 +192,27 @@
             <div>
               <div>
                 <span>NMT Computer Science Department</span>
-                <h4 class="description">grader and tutor, June 2015-June 2016</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-book descriptionIcon" aria-hidden="true"></i>
+                  grader and tutor, June 2015-June 2016
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Grader+tutor for CSE-113 Intro. to Programming in C and
                   CSE-122 Intro. to Algorithms and Data Structures.
-                </li class="leftLine">
+                </li>
               </ul>
             </div>
             <div>
               <div>
                 <span>NMT Computer Science LLC</span>
-                <h4 class="description">LLC research project, August 2014-May 2015</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-flask descriptionIcon" aria-hidden="true"></i>
+                  LLC research project, August 2014-May 2015
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Participant in the Android Applications Development LLC, a
                   research program at New Mexico Tech.
@@ -198,9 +222,12 @@
             <div>
               <div>
                 <span>University of North Texas Machine Learning Lab</span>
-                <h4 class="description">research assistant, October 2014-June 2015</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-flask descriptionIcon" aria-hidden="true"></i>
+                  research assistant, October 2014-June 2015
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Assisted with the development of a citation scraper.
                 </li>
@@ -209,9 +236,12 @@
             <div>
               <div>
                 <span>Game and Learn</span>
-                <h4 class="description">co-founder, head of research and development, March 2014-Ongoing</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-heart descriptionIcon" aria-hidden="true"></i>
+                  co-founder, head of research and development, March 2014-Ongoing
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Helping develop a suite of free applications to help autistic
                   and dyslexic children in the classroom.
@@ -221,9 +251,12 @@
             <div>
               <div>
                 <span>Midland Senior High School FTC Robotics Program</span>
-                <h4 class="description">programming mentor, September 2014-ongoing</h4>
+                <h4 class="description leftLine">
+                  <i class="fa fa-graduation-cap descriptionIcon" aria-hidden="true"></i>
+                  programming mentor, September 2014-ongoing
+                </h4>
               </div>
-              <ul>
+              <ul class="hideOnPrint">
                 <li class="leftLine">
                   Helping a group of STEM-oriented high-school students produce
                   programs to control robots in a competitive environment.
@@ -240,12 +273,15 @@
           <div class="itemize">
             <div>
               <div>
-                <a href="https://github.com/chrismamo1/ocaml-cow">OCaml COW</a>
+                <a href="github.com/chrismamo1/ocaml-cow">OCaml COW</a>
                 <h4 class="description">web programming library</h4>
-                <h4 class="tools">OCaml, HTML, CSS, JavaScript</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  CSS, HTML, JavaScript, OCaml
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Worked to enhance the safe and efficient generation of web
                   pages with COW, a static web page generation tool written in OCaml.
                 </li>
@@ -253,12 +289,15 @@
             </div>
             <div>
               <div>
-                <a href="https://github.com/chrismamo1/ppx_netblob/">PPX Netblob</a>
+                <a href="github.com/chrismamo1/ppx_netblob">PPX Netblob</a>
                 <h4 class="description">type-driven web programming</h4>
-                <h4 class="tools">OCaml</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  OCaml
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Authoring an OCaml library for producing safe and efficient
                   HTTP code at compile time.
                 </li>
@@ -266,12 +305,15 @@
             </div>
             <div>
               <div>
-                <a href="https://twitter.com/mlhacks/status/792825685505028096">Sound of Hacking</a>
+                <a href="bit.ly/2uxkXZR">Sound of Hacking</a>
                 <h4 class="description">security visualization hack</h4>
-                <h4 class="tools">JavaScript, OCaml, libpcap</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  JavaScript, libpcap, OCaml
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Tool for visualizing real-time traffic on local networks,
                   winner of Best Device Security Hack at CodeRed 2016.
                 </li>
@@ -279,25 +321,31 @@
             </div>
             <div>
               <div>
-                <a href="https://github.com/chrismamo1/reflagvsflag/">RE Flag Vs. Flag</a>
+                <a href="github.com/chrismamo1/reflagvsflag">RE Flag Vs. Flag</a>
                 <h4 class="description">toy site for ranking flags</h4>
-                <h4 class="tools">Go, Postgres, React.js, PureCSS, ReasonML, Docker, AWS</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  AWS, Docker, Go, PostgreSQL, PureCSS, ReasonReact
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Authoring and maintaining a viral site for rating and comparing flags,
-                  reflagvsflag.com.
+                  <code>reflagvsflag.com</code>.
                 </li>
               </ul>
             </div>
             <div>
               <div>
-                <a href="https://github.com/michemochi/bitcamp2017">WillThisKill.Me?</a>
+                <a href="github.com/michemochi/bitcamp2017">WillThisKill.Me</a>
                 <h4 class="description">hackathon project</h4>
-                <h4 class="tools">CSS, HTML, React.js</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  CSS, HTML, React.js
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Developing an application to detect and report allergens in food items
                   with only disparate and partial data.
                 </li>
@@ -305,12 +353,15 @@
             </div>
             <div>
               <div>
-                <a href="https://github.com/chrismamo1/ducklet">Ducklet</a>
+                <a href="github.com/chrismamo1/ducklet">Ducklet</a>
                 <h4 class="description">lightweight HTTP server</h4>
-                <h4 class="tools">C, HTTP, Perl</h4>
+                <h4 class="tools">
+                  <i class="fa fa-code descriptionIcon" aria-hidden="true"></i>
+                  C, HTTP, Perl
+                </h4>
               </div>
-              <ul>
-                <li class="leftLine hideOnPrint">
+              <ul class="hideOnPrint">
+                <li class="leftLine">
                   Building a lightweight CGI/Application server to gain experience in
                   systems programming and networking.
                 </li>
