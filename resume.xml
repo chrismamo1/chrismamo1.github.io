@@ -11,8 +11,7 @@
     <homepage>chrismamo1.github.io</homepage>
     <socialMedia>github.com/chrismamo1</socialMedia>
   </contact>
-  <skillSet>
-    <setName>Top Programming Languages</setName>
+  <skillSet title="Top Programming Languages">
     <skill>
       <name>C</name>
       <detail>&gt;10K lines</detail>
