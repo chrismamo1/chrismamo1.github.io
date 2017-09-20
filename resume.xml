@@ -1,1 +1,43 @@
-/home/chrismamo1/Documents/web-programming-cs???/hw3/resume.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<resume xmlns="http://chrismamo1.github.io/resume.xsd">
+  <name>
+    <first>John</first>
+    <middle>Christopher</middle>
+    <last>McAlpine</last>
+  </name>
+  <contact>
+    <email>John.McAlpine@student.nmt.edu</email>
+    <phone>+1 (432) 288-2945</phone>
+    <homepage>chrismamo1.github.io</homepage>
+    <socialMedia>github.com/chrismamo1</socialMedia>
+  </contact>
+  <skillSet>
+    <setName>Top Programming Languages</setName>
+    <skill>
+      <name>C</name>
+      <detail>&gt;10K lines</detail>
+    </skill>
+    <skill>
+      <name>JS</name>
+      <detail>&gt;10K lines</detail>
+    </skill>
+    <skill>
+      <name>OCaml</name>
+      <detail>&gt;10K lines</detail>
+    </skill>
+    <skill>
+      <name>Java</name>
+      <detail>~5K lines</detail>
+    </skill>
+    <skill>
+      <name>Go</name>
+      <detail>~3K lines</detail>
+    </skill>
+  </skillSet>
+  <experienceSet title="Coursework">
+    <experience>
+      <title>Operating Systems</title>
+      <period>Spring 2017</period>
+    </experience>
+  </experienceSet>
+</resume>

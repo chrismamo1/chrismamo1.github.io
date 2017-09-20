@@ -1,1 +1,78 @@
-/home/chrismamo1/Documents/web-programming-cs???/hw3/resume.xsd
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://chrismamo1.github.io/resume.xsd"
+  xmlns="http://chrismamo1.github.io/resume.xsd"
+  elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      Basic resumé schema, ideal for Computer Science.
+    </xs:documentation>
+    <xs:documentation xml:lang="nl">
+      Basis resumé schema voor een ingenieur van computertechnologie.
+    </xs:documentation>
+    <xs:documentation xml:lang="fr">
+      CV pour un informaticien.
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name="resume" type="ResumeType" />
+
+  <xs:complexType name="ResumeType">
+    <xs:sequence>
+      <xs:element name="name" type="FullNameType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="contact" type="ContactInfoType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="skillSet" type="SkillSetType" minOccurs="1" />
+      <xs:element name="experienceSet" type="ExperienceSetType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="FullNameType">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="middle" type="xs:string" minOccurs="0" />
+      <xs:element name="last" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ContactInfoType">
+    <xs:sequence>
+      <xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="phone" type="xs:string" minOccurs="1" />
+      <xs:element name="homepage" type="xs:string" minOccurs="1" />
+      <xs:element name="socialMedia" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SkillSetType">
+    <xs:sequence>
+      <xs:element name="setName" minOccurs="0" maxOccurs="1" />
+      <xs:element name="skill" minOccurs="1">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+          <xs:element name="detail" type="xs:string" minOccurs="1" />
+        </xs:sequence>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExperienceSetType">
+    <xs:attribute name="title" type="xs:string" />
+    <xs:sequence>
+      <xs:element name="experience" minOccurs="1">
+        <xs:sequence>
+          <xs:element name="title" type="string" />
+          <xs:element name="period" type="string" minOccurs="0" />
+          <xs:element name="description" type="ListType" minOccurs="0" />
+          <xs:element name="skills" type="ListType" minOccurs="0" />
+        </xs:sequence>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ListType">
+    <xs:sequence>
+      <xs:element name="li" type="string" minOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
