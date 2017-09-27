@@ -22,8 +22,8 @@
     <xs:sequence>
       <xs:element name="name" type="FullNameType" minOccurs="1" maxOccurs="1" />
       <xs:element name="contact" type="ContactInfoType" minOccurs="1" maxOccurs="1" />
-      <xs:element name="skillSet" type="SkillSetType" minOccurs="1" />
-      <xs:element name="experienceSet" type="ExperienceSetType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="skillSet" type="SkillSetType" minOccurs="1" maxOccurs="5000" />
+      <xs:element name="experienceSet" type="ExperienceSetType" minOccurs="1" maxOccurs="5000" />
     </xs:sequence>
   </xs:complexType>
 
@@ -45,34 +45,38 @@
   </xs:complexType>
 
   <xs:complexType name="SkillSetType">
-    <xs:element name="title" type="xs:string" />
     <xs:sequence>
-      <xs:element name="skill" minOccurs="1">
-        <xs:sequence>
-          <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
-          <xs:element name="detail" type="xs:string" minOccurs="1" />
-        </xs:sequence>
+      <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="skill" minOccurs="1" maxOccurs="5000">
+        <xs:complexType>
+          <xs:all>
+            <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+            <xs:element name="detail" type="xs:string" minOccurs="0" />
+          </xs:all>
+        </xs:complexType>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="ExperienceSetType">
-    <xs:attribute name="title" type="xs:string" />
     <xs:sequence>
-      <xs:element name="experience" minOccurs="1">
-        <xs:sequence>
-          <xs:element name="title" type="string" />
-          <xs:element name="period" type="string" minOccurs="0" />
-          <xs:element name="description" type="ListType" minOccurs="0" />
-          <xs:element name="skills" type="ListType" minOccurs="0" />
-        </xs:sequence>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="experience" minOccurs="1" maxOccurs="5000">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="period" type="xs:string" minOccurs="0" />
+            <xs:element name="description" type="ListType" minOccurs="0" />
+            <xs:element name="skills" type="ListType" minOccurs="0" />
+          </xs:sequence>
+        </xs:complexType>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="ListType">
     <xs:sequence>
-      <xs:element name="li" type="string" minOccurs="1" />
+      <xs:element name="li" type="xs:string" minOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
