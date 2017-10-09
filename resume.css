@@ -8,6 +8,18 @@ body {
   background-color: #fffaff;
   letter-spacing: 0.225px;
   max-width: 100%; }
+  @media (max-width: 1920) {
+    body {
+      margin-left: 2in;
+      margin-right: 2in; } }
+  @media (max-width: 1000px) {
+    body {
+      margin-left: 1in;
+      margin-right: 1in; } }
+  @media (max-width: 500px) {
+    body {
+      margin-left: 0.5in;
+      margin-right: 0.5in; } }
 
 * {
   list-style: none; }

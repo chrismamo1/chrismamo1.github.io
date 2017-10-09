@@ -8,6 +8,18 @@ body {
   background-color: #fffaff;
   letter-spacing: 0.225px;
   max-width: 100%; }
+  @media (max-width: 1920) {
+    body {
+      margin-left: 2in;
+      margin-right: 2in; } }
+  @media (max-width: 1000px) {
+    body {
+      margin-left: 1in;
+      margin-right: 1in; } }
+  @media (max-width: 500px) {
+    body {
+      margin-left: 0.5in;
+      margin-right: 0.5in; } }
 
 * {
   list-style: none; }
@@ -215,6 +227,21 @@ body {
   font-size: 0.915em;
   margin-left: 0;
   margin-right: 0; }
+
+#header_container {
+  display: flex;
+  text-align: left; }
+  #header_container .name {
+    display: inline; }
+  #header_container .contact_details {
+    font-size: 0.875em;
+    padding-top: 10px; }
+    #header_container .contact_details span {
+      display: block;
+      float: left;
+      flex: 1;
+      width: 45%;
+      margin: 0; }
 
 a {
   text-decoration: none;
