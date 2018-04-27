@@ -6,9 +6,21 @@ $harmonious-first: lighten($harmonious-first, 1%);
 
 @import "_resume-lib.scss";
 
+b {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
 body {
   background-color: white;
-  font-size: 0.915em;
+  font-size: 1em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -18,16 +30,18 @@ body {
   text-align: left;
   padding-left: 1em;
   .name {
+    flex: 3;
     display: inline;
+    text-align: center;
   }
   .contact_details {
-    font-size: 0.87em;
+    flex: 5;
+    font-size: 0.925em;
     padding-top: 10px;
+    height: 2em;
     span {
-      display: block;
-      float: left;
-      flex: 1;
-      width: 49%;
+      //display: flex;
+      width: 48%;
       margin: 0;
     }
   }
@@ -52,7 +66,7 @@ a:not(.hideHref) {
     padding-top: 2px;
     right: 0;
     position: absolute;
-    font-weight: normal;
+    font-weight: 100;
     font-size: $a-size;
     display: inline-block;
     vertical-align: middle;
@@ -73,7 +87,8 @@ a:not(.hideHref) {
 #header_container > .name {
   margin-bottom: 5px;
   margin-top: 1px;
-  font-size: 2em;
+  font-weight: 500;
+  font-size: 2.125em;
 }
 
 #header_container > .name .given {
@@ -81,7 +96,7 @@ a:not(.hideHref) {
 }
 
 .body-column {
-  margin-left: 0.15in;
+  //margin-left: 0.3in;
 }
 
 #body_container {
@@ -175,7 +190,7 @@ $tl-width:  90px;
 }
 
 @page {
-  margin-right: 0.39in;
-  margin-left: 0.22in;
-  margin-top: 0.15in;
+  margin-right: 0.525in;
+  margin-left: 0.475in;
+  margin-top: 0.175in;
 }

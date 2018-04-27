@@ -29,7 +29,11 @@ h1, h2, h3, h4, h5, h6, ul {
   margin-bottom: 0.25em; }
 
 h3 {
-  font-weight: 125; }
+  font-weight: 600;
+  font-size: 1.05em; }
+
+h4 {
+  font-weight: 100; }
 
 .showOnPrint {
   display: none; }
@@ -67,7 +71,7 @@ h3 {
   padding-bottom: 12px; }
 
 .resume-section > *:nth-child(1) {
-  font-size: 1.50em;
+  font-size: 1.125em;
   margin: 0;
   padding: 0;
   margin-bottom: 3px;
@@ -77,9 +81,10 @@ h3 {
   color: #ffc400;
   background-color: #4e619d;
   line-height: 100%;
-  height: 1.25em;
-  width: 1.25em;
+  height: 1.1em;
+  width: 1.1em;
   padding: 5px;
+  padding-right: 6px;
   margin: 0;
   padding-bottom: 0;
   vertical-align: middle;
@@ -99,7 +104,7 @@ h3 {
   text-align: center; }
 
 .resume-section > * {
-  margin-left: 2.375em; }
+  margin-left: 1.75em; }
 
 /*.resume-section > *:nth-child(1n+2) * {
   margin-top: 2px;
@@ -110,11 +115,10 @@ h3 {
 }*/
 .itemize > div {
   padding-bottom: 5px;
-  margin-bottom: 7px; }
+  margin-bottom: 10px; }
 
 .itemize > div > div:nth-child(1) {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.075em;
   /*display: flex;
   flex-wrap: wrap;*/
   vertical-align: middle; }
@@ -148,18 +152,20 @@ h3 {
   vertical-align: middle;
   padding: 1px; }
 
+.description {
+  font-weight: lighter;
+  font-style: oblique;
+  font-size: 0.7em;
+  color: #4D4D4D; }
+
 .itemize > div > div:nth-child(1) > .description {
   font-weight: lighter;
   font-style: oblique;
   font-size: 0.7em;
   color: #4D4D4D; }
 
-.description {
-  display: block; }
-
 .itemize > div > div:nth-child(1) > .tools {
   font-weight: lighter;
-  font-style: bold;
   font-size: 0.7em;
   color: #4D4D4D;
   margin-right: auto; }
@@ -222,9 +228,18 @@ h3 {
   margin-left: 1em;
   list-style: disc; }
 
+b {
+  font-weight: 400; }
+
+h2 {
+  font-weight: 600; }
+
+h3 {
+  font-weight: 600; }
+
 body {
   background-color: white;
-  font-size: 0.915em;
+  font-size: 1em;
   margin-left: 0;
   margin-right: 0; }
 
@@ -233,15 +248,16 @@ body {
   text-align: left;
   padding-left: 1em; }
   #header_container .name {
-    display: inline; }
+    flex: 3;
+    display: inline;
+    text-align: center; }
   #header_container .contact_details {
-    font-size: 0.87em;
-    padding-top: 10px; }
+    flex: 5;
+    font-size: 0.925em;
+    padding-top: 10px;
+    height: 2em; }
     #header_container .contact_details span {
-      display: block;
-      float: left;
-      flex: 1;
-      width: 49%;
+      width: 48%;
       margin: 0; }
 
 a {
@@ -261,7 +277,7 @@ a:not(.hideHref) {
     padding-top: 2px;
     right: 0;
     position: absolute;
-    font-weight: normal;
+    font-weight: 100;
     font-size: 0.74em;
     display: inline-block;
     vertical-align: middle;
@@ -278,13 +294,11 @@ a:not(.hideHref) {
 #header_container > .name {
   margin-bottom: 5px;
   margin-top: 1px;
-  font-size: 2em; }
+  font-weight: 500;
+  font-size: 2.125em; }
 
 #header_container > .name .given {
   border-right: none; }
-
-.body-column {
-  margin-left: 0.15in; }
 
 #body_container {
   display: flex; }
@@ -362,8 +376,8 @@ a:not(.hideHref) {
     /*border-bottom: 1px solid darken(mix-neutral($harmonious-first), 9%);*/ }
 
 @page {
-  margin-right: 0.39in;
-  margin-left: 0.22in;
-  margin-top: 0.15in; }
+  margin-right: 0.525in;
+  margin-left: 0.475in;
+  margin-top: 0.175in; }
 
 /*# sourceMappingURL=resume-print.css.map */

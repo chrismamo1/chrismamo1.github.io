@@ -31,7 +31,12 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 h3 {
-  font-weight: 125;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+h4 {
+  font-weight: 100;
 }
 
 .showOnPrint {
@@ -79,7 +84,7 @@ h3 {
 }
 
 .resume-section > *:nth-child(1) {
-  font-size: 1.50em;
+  font-size: 1.125em;
   margin: 0;
   padding: 0;
   margin-bottom: 3px;
@@ -90,9 +95,10 @@ h3 {
   color: $second-color;
   background-color: darken(mix-neutral($harmonious-first), 5%);
   line-height: 100%;
-  height: 1.25em;
-  width: 1.25em;
+  height: 1.1em;
+  width: 1.1em;
   padding: 5px;
+  padding-right: 6px;
   margin: 0;
   padding-bottom: 0;
   vertical-align: middle;
@@ -114,7 +120,7 @@ h3 {
 }
 
 .resume-section > * {
-  margin-left: 2.375em;
+  margin-left: 1.75em;
 }
 
 /*.resume-section > *:nth-child(1n+2) * {
@@ -127,12 +133,11 @@ h3 {
 
 .itemize > div {
   padding-bottom: 5px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .itemize > div > div:nth-child(1) {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.075em;
   /*display: flex;
   flex-wrap: wrap;*/
   vertical-align: middle;
@@ -174,6 +179,13 @@ h3 {
   padding: 1px;
 }
 
+.description {
+  font-weight: lighter;
+  font-style: oblique;
+  font-size: 0.7em;
+  color: #4D4D4D;
+}
+
 .itemize > div > div:nth-child(1) > .description {
   font-weight: lighter;
   font-style: oblique;
@@ -181,13 +193,8 @@ h3 {
   color: #4D4D4D;
 }
 
-.description {
-  display: block;
-}
-
 .itemize > div > div:nth-child(1) > .tools {
   font-weight: lighter;
-  font-style: bold;
   font-size: 0.7em;
   color: #4D4D4D;
   margin-right: auto;
